@@ -25,18 +25,18 @@ function Product({id, title, image, price, rating}) {
             <div className="product_info">
                 <p>{title}</p>
                 <p className="product_price">
-                    <small>가격</small>
+                    <small>가격 </small>
                     <strong>{price}</strong>
-                    <small>원</small>
+                    <small> 원</small>
                 </p>
 
                 <div className="product_rating">
                     {
                         Array(rating)
-                            .fill()
-                            .map(() => {
-                                <p>★</p>
-                            })
+                            .fill(<p>★</p>)
+                            // .map(() => {
+                            //
+                            // })
                     }
                 </div>
             </div>
